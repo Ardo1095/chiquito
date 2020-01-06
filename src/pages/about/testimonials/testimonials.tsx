@@ -1,22 +1,26 @@
 import React, { FC } from 'react';
 import './testimonials.css';
-import clientImage from '../../../assets/clientImage.jpg'
-const Testimonials: FC = () => (
-  <div className="testimonialsContainer center">
-    <h1>TESTIMONIALS</h1>
+import clientImage from '../../../assets/clientImage.jpg';
+import testimonialsData from './testimonials.data';
 
-    <div className="testimonialsContent">
-      <div className="testimonial">
-        <h1 className="testimonialQuote">&ldquo;</h1>
-        <p>
-          Cum nomen prarere, omnes peses amor pius, rusticus racanaesadas. Ubi est mirabilis gemna? Cum gabalium velum, omnes
-          fugaes Ubi est peritus devatio? A falsis
-        </p>
-        <div className="clientContainer">
-          <div style={{ backgroundImage: `url(${clientImage})`}} className="clientImage" />
-        </div>
+const renderTestimonial = ({ testimonial, name }: any, index: { toString: () => React.ReactText }) => (
+  <div key={index.toString()} className="testimonial">
+    <h1 className="testimonialQuote">&ldquo;</h1>
+    <p className="testimonialRemark">{testimonial}</p>
+    <div className="clientDetailsContainer">
+      <div style={{ backgroundImage: `url(${clientImage})` }} className="clientImage" />
+      <div className="clientDetails">
+        <h6>{name}</h6>
+        <p>Client</p>
       </div>
     </div>
+  </div>
+);
+
+const Testimonials: FC = () => (
+  <div className="testimonialSection center">
+    <h1>TESTIMONIALS</h1>
+    <div className="testimonialContainer">{testimonialsData.map(renderTestimonial)}</div>
   </div>
 );
 

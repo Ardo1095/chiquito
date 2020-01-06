@@ -6,7 +6,7 @@ const AboutText: FC = () => (
     <div className="aboutTextHeaderContainer">
       <h1 className="quote">&ldquo;</h1>
       <h2 className="aboutTextHeader">
-        NEW GENERATION <br /> OF FARMERS
+        NEW GENERATION <br /> OF POULTRY
       </h2>
     </div>
 

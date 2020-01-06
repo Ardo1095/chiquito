@@ -11,7 +11,7 @@ const NavLink: FC<Props> = ({ route }) => (
     exact
     className="navLinkContainer center"
     activeClassName="navLinkActiveClass"
-    to={route === 'Home' ? '/' : route.toLowerCase()}
+    to={route === 'Home' ? '/' : `/${route.toLowerCase()}`}
   >
     {route.toUpperCase()}
   </NL>

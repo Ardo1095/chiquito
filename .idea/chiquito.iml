@@ -6,5 +6,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="slick" level="application" />
+    <orderEntry type="library" name="slick-theme" level="application" />
+    <orderEntry type="library" name="smtp" level="application" />
   </component>
 </module>

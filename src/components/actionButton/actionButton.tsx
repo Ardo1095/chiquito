@@ -4,11 +4,23 @@ import './actionButton.css';
 interface Props {
   action: string;
   onClick: React.MouseEventHandler;
-  containerStyle?: object;
+  containerStyle?: React.CSSProperties;
+  disabled?: boolean;
 }
 
-const ActionButton: FC<Props> = ({ containerStyle, onClick, action }) => (
-  <div onClick={onClick} style={{ ...containerStyle }} className="actionButton">
+const disabledColor = '#dddddd';
+
+const ActionButton: FC<Props> = ({ containerStyle, onClick, action, disabled }) => (
+  <div
+    onClick={onClick}
+    style={{
+      backgroundColor: disabled && disabledColor,
+      borderColor: disabled && disabledColor,
+      color: disabled && '#151515',
+      ...containerStyle,
+    }}
+    className="actionButton"
+  >
     {action}
   </div>
 );

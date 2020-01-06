@@ -6,23 +6,20 @@ export const homeSliderData = [
   {
     description: 'Welcome to our poultry',
     title: 'Products',
-    hello: 'sdf',
     subTitle: 'LAYED WITH LOVE',
-    backgroundImage: firstSlide,
+    backgroundImage: thirdSlide,
   },
   {
     description: 'Welcome to our poultry',
     title: 'Products',
-    hello: 'sdf',
     subTitle: 'LAYED WITH LOVE',
     backgroundImage: secondSlide,
   },
   {
     description: 'Welcome to our poultry',
     title: 'Products',
-    hello: 'sdf',
     subTitle: 'LAYED WITH LOVE',
-    backgroundImage: thirdSlide,
+    backgroundImage: firstSlide,
   },
 ];
 

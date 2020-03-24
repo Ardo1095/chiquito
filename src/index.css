@@ -6,7 +6,7 @@
   color: #151515;
 }
 
-.appContainer {
+. appContainer {
   min-height: 100vh;
   display: flex;
   flex-direction: column;

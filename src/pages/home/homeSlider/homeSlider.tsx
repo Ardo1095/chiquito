@@ -6,8 +6,7 @@ import Slide from './slide';
 import SliderRightButton from '../../../components/slider/sliderRightButton/slider.rightButton';
 import { leftButtonStyles, rightButtonStyles } from './homeSlider.data';
 import Button from '../../../components/button/button';
-import firstSlide from '../../../assets/firstSlide.jpg';
-import secondSlide from '../../../assets/secondSlide.jpg';
+ import secondSlide from '../../../assets/secondSlide.jpg';
 import thirdSlide from '../../../assets/thirdSlide.jpg';
 import ActionButton from '../../../components/actionButton/actionButton';
 
